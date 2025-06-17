@@ -2,21 +2,18 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: black;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-mono: var(--font-space-mono);
+  --font-grotesk: var(--font-space-grotesk);
+  --shadow-main: rgba(12, 12, 12, 0.5) 0px 8px 24px;
+  --shadow-light: rgba(12, 12, 12, 0.25) 0px 4px 6px;
+  --color-cs-red: #FF6161;
+  --color-cs-green: #167548;
 }
 
 body {

@@ -1,0 +1,49 @@
+"use client";
+import Link from 'next/link';
+import Image from "next/image";
+import { usePathname } from 'next/navigation';
+import { useState } from 'react';
+
+const Nav = () => {
+  const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav className="z-50 font-mono fixed left-2 md:left-1/2 md:-translate-x-1/2 flex flex-col md:flex-row bg-black/75 backdrop-blur-md shadow-lg rounded-lg top-2 p-1.5 md:p-3 md:items-center md:h-15 md:gap-5">
+      <div className="flex gap-3 md:gap-0 justify-between items-center w-full md:w-auto">
+        <Link href={"/"}><Image width={100} height={100} className="cursor-pointer w-auto h-8 md:h-10" src="/logos/Logo.svg" alt="Logo de Corralon Artesan" /></Link>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden text-white focus:outline-none"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+            {isOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
+      </div>
+      <ul className={`flex-col md:flex-row flex md:flex gap-2.5 mt-3 md:mt-0 ${isOpen ? 'flex' : 'hidden'} md:flex`}>
+        {[
+          { href: '/', label: 'Inicio' },
+          { href: '/productos', label: 'Productos' },
+          { href: '/contactos', label: 'Contactos' },
+        ].map(({ href, label }) => (
+          <li key={href} className="text-center list-none">
+            <Link href={href}
+              className={`flex justify-center rounded-full items-center h-10 text-sm hover:bg-cs-red hover:text-white font-bold px-6 cursor-pointer transition duration-400
+                ${pathname === href ? 'bg-cs-red text-white' : 'bg-white text-black'}
+              `}
+            >
+              {label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
+
+export default Nav;
