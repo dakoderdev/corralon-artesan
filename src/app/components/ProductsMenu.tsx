@@ -16,7 +16,7 @@ export default function ProductsMenu() {
                 </div>
                 <h3 className="h-fit leading-5 text-black">Griferias</h3>
             </Link>
-            <Link href={"/"} className="flex flex-col gap-2 cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2 lg:col-start-3">
+            <Link href={"/productos/construccion/ceramicos"} className="flex flex-col gap-2 cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2 lg:col-start-3">
                 <div className="relative w-full h-72 lg:h-full rounded-xl overflow-hidden">
                     <Image
                     width={500}
@@ -28,7 +28,7 @@ export default function ProductsMenu() {
                 </div>
                 <h3 className="h-fit leading-5 text-black">Cerámicos</h3>
             </Link>
-            <Link href={"/"} className="flex flex-col gap-2 cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2 lg:col-start-5">
+            <Link href={"/productos/construccion/tanques"} className="flex flex-col gap-2 cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2 lg:col-start-5">
                 <div className="bg-white relative w-full h-72 lg:h-full rounded-xl overflow-hidden">
                     <Image
                     width={500}
@@ -52,7 +52,7 @@ export default function ProductsMenu() {
                 </div>
                 <h3 className="h-fit leading-5 text-black">Muebles de Cocina</h3>
             </Link>
-            <Link href={"/"} className="flex flex-col gap-2 cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2">
+            <Link href={"/productos/construccion"} className="flex flex-col gap-2 cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2">
                 <div className="relative w-full h-72 lg:h-full rounded-xl overflow-hidden">
                     <Image
                     width={500}
@@ -64,7 +64,7 @@ export default function ProductsMenu() {
                 </div>
                 <h3 className="h-fit leading-5 text-black">Materiales de Construcción</h3>
             </Link>
-            <Link href={"/"} className="flex flex-col gap-2 cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-start-3">
+            <Link href={"/productos/construccion/membranas"} className="flex flex-col gap-2 cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-start-3">
                 <div className="relative w-full h-72 lg:h-full rounded-xl overflow-hidden">
                     <Image
                     width={500}
@@ -76,7 +76,7 @@ export default function ProductsMenu() {
                 </div>
                 <h3 className="h-fit leading-5 text-black">Membranas</h3>
             </Link>
-            <Link href={"/"} className="flex flex-col gap-2 cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2 lg:col-start-4">
+            <Link href={"/productos/construccion/canos-y-accesorios"} className="flex flex-col gap-2 cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2 lg:col-start-4">
                 <div className="relative w-full h-72 lg:h-full rounded-xl overflow-hidden">
                     <Image
                     width={500}

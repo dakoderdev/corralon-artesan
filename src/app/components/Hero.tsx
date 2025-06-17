@@ -46,7 +46,7 @@ function Slide2() {
   return (
     <div className="w-screen h-screen flex flex-col gap-4 items-baseline justify-end bg-[url(/imagenes/baño.jpg)] bg-cover bg-center p-14 slides">
       <h1 className="text-3xl md:text-5xl font-bold font-mono">BAÑO</h1>
-      <a href="" className="bg-cs-red hover:bg-black py-2 px-4 hover:text-white focus:text-white rounded-full transition duration-300">Ver Más</a>
+      <Link href="/productos/banos" className="bg-cs-red hover:bg-black py-2 px-4 hover:text-white focus:text-white rounded-full transition duration-300">Ver Más</Link>
     </div>
   );
 }
@@ -55,7 +55,7 @@ function Slide3() {
   return (
     <div className="w-screen h-screen flex flex-col gap-4 items-baseline bg-[url(/imagenes/ceramicos.webp)] bg-cover bg-center p-14 slides">
       <h1 className="text-3xl md:text-5xl font-bold font-mono">CERÁMICOS</h1>
-      <a href="" className="bg-cs-red hover:bg-black py-2 px-4 hover:text-white focus:text-white rounded-full transition duration-300">Ver Más</a>
+      <a href="/productos/construccion/ceramicos" className="bg-cs-red hover:bg-black py-2 px-4 hover:text-white focus:text-white rounded-full transition duration-300">Ver Más</a>
     </div>
   );
 }
