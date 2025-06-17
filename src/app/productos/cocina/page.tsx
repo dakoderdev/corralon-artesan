@@ -12,7 +12,6 @@ export default function Page() {
             <Back name="Cocina" path="/productos" />
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
                 <ProductItem name="Mesada" image={mesada} path="cocina/mesada" />
-                <ProductItem name="Mueble de Cocina" image={muebleDeCocina} path="cocina/mueble-de-cocina" />
                 <ProductItem name="Bacha" image={bacha} path="cocina/bacha" />
                 <ProductItem name="Grifería" image={griferia} path="../productos/banos/griferia" />
             </div>

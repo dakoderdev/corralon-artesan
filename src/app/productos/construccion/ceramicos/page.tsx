@@ -18,7 +18,7 @@ export default function Page() {
     return (
         <main className="font-grotesk bg-gradient-to-br from-gray-50 to-gray-100 mb-6 px-4 sm:px-6 lg:px-16 py-12">
             <Back name="Céramicos" path="/productos/construccion" />
-            <section className="flex gap-8">
+            <section className="flex flex-col-reverse md:flex-row gap-8">
                 <div className="flex flex-col gap-3 w-full">
                     <h3 className="text-3xl pb-4 w-fit font-bold text-gray-900">Material</h3>
                     <div className="grid pb-4 gap-x-3 gap-y-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full">
@@ -43,7 +43,7 @@ export default function Page() {
                         ))}
                     </div>
                 </div>
-                <div className="w-120">
+                <div className="w-full md:w-120">
                     <h3 className="text-3xl pb-4 w-fit font-bold text-gray-900">Medidas</h3>
                     <ul className="grid grid-cols-2 gap-1.5 font-mono">
                         <li className="p-2 bg-white border border-gray-200 rounded-lg flex justify-center items-center">36x36</li>

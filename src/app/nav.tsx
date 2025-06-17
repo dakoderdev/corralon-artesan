@@ -8,10 +8,23 @@ const Nav = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
+  const backgroundImageURL = "imagenes/paper-texture.png";
+
   return (
-    <nav className="z-50 font-mono fixed left-2 md:left-1/2 md:-translate-x-1/2 flex flex-col md:flex-row bg-black/75 backdrop-blur-md shadow-lg rounded-lg top-2 p-1.5 md:p-3 md:items-center md:h-15 md:gap-5">
+    <nav
+      className={`${isOpen ? "w-[calc(100%-1rem)] h-fit rounded-xl p-8" : "py-1.5 px-3 md:p-3 w-fit rounded-lg"} left-2 top-2 md:left-1/2 z-50 font-mono fixed md:-translate-x-1/2 flex flex-col md:flex-row bg-black/75 backdrop-blur-md shadow-lg md:items-center md:h-15 md:gap-5 transition-all duration-500`}
+      style={isOpen ? { backgroundImage: `url(${backgroundImageURL})`, backgroundSize: "cover", backgroundPosition: "center" } : {}}
+    >
       <div className="flex gap-3 md:gap-0 justify-between items-center w-full md:w-auto">
-        <Link href={"/"}><Image width={100} height={100} className="cursor-pointer w-auto h-8 md:h-10" src="/logos/Logo.svg" alt="Logo de Corralon Artesan" /></Link>
+        <Link href={"/"}>
+          <Image
+            width={100}
+            height={100}
+            className="cursor-pointer w-auto h-8 md:h-10"
+            src="/logos/Logo.svg"
+            alt="Logo de Corralon Artesan"
+          />
+        </Link>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-white focus:outline-none"
@@ -25,19 +38,23 @@ const Nav = () => {
           </svg>
         </button>
       </div>
+
       <ul className={`flex-col md:flex-row flex md:flex gap-2.5 mt-3 md:mt-0 ${isOpen ? 'flex' : 'hidden'} md:flex`}>
         {[
           { href: '/', label: 'Inicio' },
           { href: '/productos', label: 'Productos' },
           { href: '/contactos', label: 'Contactos' },
         ].map(({ href, label }) => (
-          <li key={href} className="text-center list-none">
-            <Link href={href}
-              className={`flex justify-center rounded-full items-center h-10 text-sm hover:bg-cs-red hover:text-white font-bold px-6 cursor-pointer transition duration-400
-                ${pathname === href ? 'bg-cs-red text-white' : 'bg-white text-black'}
-              `}
-            >
-              {label}
+          <li key={href} className="text-center w-fit list-none">
+            <Link href={href} passHref>
+              <div
+                onClick={() => setIsOpen(false)}
+                className={`flex justify-center rounded-full items-center h-10 text-sm hover:bg-cs-red hover:text-white font-bold px-6 cursor-pointer transition duration-400
+                  ${pathname === href ? 'bg-cs-red text-white' : 'bg-white text-black'}
+                `}
+              >
+                {label}
+              </div>
             </Link>
           </li>
         ))}

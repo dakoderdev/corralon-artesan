@@ -34,16 +34,11 @@ export default function ProductosPage() {
       image: "/imagenes/promos/promo-baño-capea.avif",
       href: "/promos/baño-capea",
     },
-    {
-      title: "Promo Mueble",
-      image: "/imagenes/promos/promo-mueble.avif",
-      href: "/promos/mueble",
-    },
   ]
 
   return (
     <>
-      <main className="font-grotesk min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+      <main className="font-grotesk min-h-dvh bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="px-4 sm:px-6 lg:px-16 py-12">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
@@ -55,9 +50,9 @@ export default function ProductosPage() {
                     <Link
                       key={index}
                       href={category.href}
-                      className="group flex flex-col sm:flex-row bg-white rounded-2xl hover:shadow-lg overflow-hidden border border-gray-200 transition-all duration-300 hover:-translate-y-0.5 p-4 sm:p-0"
+                      className="group flex flex-col sm:flex-row bg-white rounded-2xl hover:shadow-lg overflow-hidden border border-gray-200 transition-all duration-300 hover:-translate-y-0.5 p-3 sm:p-0"
                     >
-                      <div className="relative w-full sm:w-40 h-40 sm:h-auto overflow-hidden rounded-xl sm:rounded-none sm:rounded-l-2xl">
+                      <div className="relative w-full sm:w-40 h-40 sm:h-auto overflow-hidden rounded-md sm:rounded-none sm:rounded-l-2xl">
                         <Image
                           src={category.image || "/placeholder.svg"}
                           className="w-full h-full object-cover"
