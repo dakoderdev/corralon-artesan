@@ -40,7 +40,7 @@ export default function ProductsMenu() {
                 </div>
                 <h3 className="h-fit leading-5 text-black">Tanques</h3>
             </Link>
-            <Link href={"/"} className="flex flex-col gap-2 cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2 lg:row-span-2 lg:col-start-7">
+            <Link href={"/productos/cocina/mueble-de-cocina"} className="flex flex-col gap-2 cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2 lg:row-span-2 lg:col-start-7">
                 <div className="relative w-full h-72 lg:h-full rounded-xl overflow-hidden">
                     <Image
                     width={500}
