@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function ProductsMenu() {
     return (
         <section className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-8 sm:h-auto lg:h-screen gap-y-3 gap-x-6 p-6 sm:p-8 md:px-18 md:py-20 bg-zinc-200/70">
-            <Link href={"/"} className="flex flex-col gap-2 cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2">
+            <Link href={"/productos/banos/griferia"} className="flex flex-col gap-2 cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2">
                 <div className="relative w-full h-72 lg:h-full rounded-xl overflow-hidden">
                     <Image
                     width={500}

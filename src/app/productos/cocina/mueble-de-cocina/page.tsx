@@ -16,7 +16,7 @@ import Image from "next/image";
 
 export default function Page() {
     return (
-        <main className="font-grotesk min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 mb-6 px-4 sm:px-6 lg:px-16 py-12">
+        <main className="font-grotesk bg-gradient-to-br from-gray-50 to-gray-100 mb-6 px-4 sm:px-6 lg:px-16 py-12">
             <Back name="Mueble de Cocina" path="/productos/cocina" />
             <div className="grid grid-cols-2 gap-3">
                 <article className="flex h-44 w-full bg-white rounded-2xl border border-gray-200">
