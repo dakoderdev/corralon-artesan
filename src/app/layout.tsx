@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Corralón Artesan | Materiales de Construcción en Tucumán",
   description:
     "Empresa con más de 30 años de experiencia en comercialización de materiales de construcción en Tucumán.",
-  metadataBase: new URL("https://www.corralonartesan.com"),
+  metadataBase: new URL("https://www.corralonartesan.vercel.app"),
   alternates: {
     canonical: "/",
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Corralón Artesan | Materiales de Construcción en Tucumán",
     description:
       "Empresa con más de 30 años de experiencia en comercialización de materiales de construcción en Tucumán.",
-    url: "https://www.corralonartesan.com",
+    url: "https://www.corralonartesan.vercel.app",
     type: "website",
     locale: "es_AR",
   },
@@ -52,7 +52,7 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${spaceMono.variable} ${spaceGrotesk.variable} antialiased`}
       >
