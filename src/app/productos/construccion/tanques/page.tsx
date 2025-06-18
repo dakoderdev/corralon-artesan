@@ -6,7 +6,7 @@ import tanqueH2o from "./tanque-h2o.avif";
 import tanqueTinacos from "./tanque-tinacos.avif";
 export default function Page() {
     return (
-        <main className="font-grotesk bg-gradient-to-br from-gray-50 to-gray-100 mb-6 px-4 sm:px-6 lg:px-16 py-12">
+        <main className="font-grotesk bg-gradient-to-br from-gray-50 to-gray-100   px-4 sm:px-6 lg:px-16 py-12">
             <Back name="Tanques" path="/productos/construccion" />
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
                 <ProductItem name="Tanque Tricapa Titan" image={tanqueTricapaTitan} clickable={false} />

@@ -14,7 +14,7 @@ export default function ProductsMenu() {
                     alt="Griferias"
                     />
                 </div>
-                <h3 className="h-fit leading-5 text-xl sm:text-base text-black">Griferias</h3>
+                <h3 className="h-fit leading-5 text-xl font-semibold sm:text-base text-gray-900">Griferías</h3>
             </Link>
             <Link href={"/productos/construccion/ceramicos"} className="flex flex-col gap-2 items-center md:items-baseline cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2 lg:col-start-3">
                 <div className="relative w-full h-60 sm:h-72 lg:h-full rounded-xl overflow-hidden">
@@ -26,31 +26,31 @@ export default function ProductsMenu() {
                     alt="Cerámicos"
                     />
                 </div>
-                <h3 className="h-fit leading-5 text-xl sm:text-base text-black">Cerámicos</h3>
+                <h3 className="h-fit leading-5 text-xl font-semibold sm:text-base text-gray-900">Cerámicos</h3>
             </Link>
             <Link href={"/productos/construccion/tanques"} className="flex flex-col gap-2 items-center md:items-baseline cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2 lg:col-start-5">
                 <div className="bg-white relative w-full h-60 sm:h-72 lg:h-full rounded-xl overflow-hidden">
                     <Image
                     width={500}
                     height={500}
-                    src="/imagenes/menu/tanques.webp"
+                    src="/imagenes/menu/tanques.jpg"
                     className="absolute inset-0 group-hover:scale-120 transition-transform duration-350 object-contain w-full h-60 sm:h-72 lg:h-full"
                     alt="Tanques"
                     />
                 </div>
-                <h3 className="h-fit leading-5 text-xl sm:text-base text-black">Tanques</h3>
+                <h3 className="h-fit leading-5 text-xl font-semibold sm:text-base text-gray-900">Tanques</h3>
             </Link>
-            <Link href={"/productos/cocina/mueble-de-cocina"} className="flex flex-col gap-2 items-center md:items-baseline cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2 lg:row-span-2 lg:col-start-7">
+            <Link href={"/productos/cocina/mesada"} className="flex flex-col gap-2 items-center md:items-baseline cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2 lg:row-span-2 lg:col-start-7">
                 <div className="relative w-full h-60 sm:h-72 lg:h-full rounded-xl overflow-hidden">
                     <Image
                     width={500}
                     height={500}
                     src="/imagenes/menu/muebles-de-cocina.jpg"
                     className="absolute inset-0 group-hover:scale-120 transition-transform duration-350 object-cover w-full h-60 sm:h-72 lg:h-full"
-                    alt="Muebles de Cocina"
+                    alt="Mesada"
                     />
                 </div>
-                <h3 className="h-fit leading-5 text-xl sm:text-base text-black">Muebles de Cocina</h3>
+                <h3 className="h-fit leading-5 text-xl font-semibold sm:text-base text-gray-900">Mesada</h3>
             </Link>
             <Link href={"/productos/construccion"} className="flex flex-col gap-2 items-center md:items-baseline cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2">
                 <div className="relative w-full h-60 sm:h-72 lg:h-full rounded-xl overflow-hidden">
@@ -62,7 +62,7 @@ export default function ProductsMenu() {
                     alt="Materiales de Construcción"
                     />
                 </div>
-                <h3 className="h-fit leading-5 text-xl sm:text-base text-black">Materiales de Construcción</h3>
+                <h3 className="h-fit leading-5 text-xl font-semibold sm:text-base text-gray-900">Materiales de Construcción</h3>
             </Link>
             <Link href={"/productos/construccion/membranas"} className="flex flex-col gap-2 items-center md:items-baseline cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-start-3">
                 <div className="relative w-full h-60 sm:h-72 lg:h-full rounded-xl overflow-hidden">
@@ -74,7 +74,7 @@ export default function ProductsMenu() {
                     alt="Membranas"
                     />
                 </div>
-                <h3 className="h-fit leading-5 text-xl sm:text-base text-black">Membranas</h3>
+                <h3 className="h-fit leading-5 text-xl font-semibold sm:text-base text-gray-900">Membranas</h3>
             </Link>
             <Link href={"/productos/construccion/canos-y-accesorios"} className="flex flex-col gap-2 items-center md:items-baseline cursor-pointer overflow-hidden rounded-t-xl group col-span-1 md:col-span-1 lg:col-span-2 lg:col-start-4">
                 <div className="relative w-full h-60 sm:h-72 lg:h-full rounded-xl overflow-hidden">
@@ -86,9 +86,11 @@ export default function ProductsMenu() {
                     alt="Caños y Accesorios"
                     />
                 </div>
-                <h3 className="h-fit leading-5 text-xl sm:text-base text-black">Caños y Accesorios</h3>
+                <h3 className="h-fit leading-5 text-xl font-semibold sm:text-base text-gray-900">Caños y Accesorios</h3>
             </Link>
-            <Link href={"/productos"} className="bg-cs-red justify-center group items-center flex cursor-pointer h-32 md h-60:sm:h-72 lg:h-auto rounded-xl col-span-1 md:col-span-1 lg:col-start-6 mb-7 font-bold"><h3 className="group-hover:scale-110 transition-transform duration-300">Ver Mas</h3></Link>
+            <Link href={"/productos"} className="bg-cs-red justify-center group items-center flex flex-col gap-2 cursor-pointer h-32 sm:h-72 lg:h-auto rounded-xl col-span-1 md:col-span-1 lg:col-start-6 mb-7 font-semibold">
+                <h3 className="group-hover:scale-110 text-2xl sm:text-base transition-transform duration-300">Ver Mas</h3>
+            </Link>
         </section>
     );
 }

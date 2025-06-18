@@ -156,7 +156,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 mt-8 pt-6 text-center">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-            <p className="text-gray-400 text-sm">© 2024 Corralón Artesán. Todos los derechos reservados.</p>
+            <p className="text-gray-400 text-sm">© 2025 Corralón Artesán. Todos los derechos reservados.</p>
             <div className="flex items-center space-x-2 text-sm font-semibold" style={{ color: "#167548" }}>
               <span className="px-3 py-1 rounded-full text-white text-xs" style={{ backgroundColor: "#167548" }}>
                 30+

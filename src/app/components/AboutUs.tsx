@@ -104,7 +104,7 @@ export default function AboutUs() {
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-gray-100">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold font-mono mb-6">SOBRE NOSOTROS</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold font-mono  ">SOBRE NOSOTROS</h1>
           <p className="text-lg sm:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
             Somos una empresa dedicada a la comercialización de materiales de construcción con una trayectoria de más de
             30 años en el rubro. Nuestras cualidades son:

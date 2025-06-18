@@ -12,7 +12,7 @@ const Nav = () => {
 
   return (
     <nav
-      className={`${isOpen ? "w-[calc(100%-1rem)] h-fit rounded-xl p-8" : "py-1.5 px-3 md:p-3 w-fit rounded-lg"} left-2 top-2 md:left-1/2 z-50 font-mono fixed md:-translate-x-1/2 flex flex-col md:flex-row bg-black/75 backdrop-blur-md shadow-lg md:items-center md:h-15 md:gap-5 transition-all duration-500`}
+      className={`${isOpen ? "w-[calc(100%-1rem)] h-fit rounded-xl p-8" : "py-1.5 px-3 md:p-3 w-fit rounded-lg"} left-2 top-2 md:left-1/2 z-50 font-mono fixed md:-translate-x-1/2 flex flex-col md:flex-row bg-black/35 backdrop-blur-sm shadow-lg md:items-center md:h-15 md:gap-5 transition-all duration-500`}
       style={isOpen ? { backgroundImage: `url(${backgroundImageURL})`, backgroundSize: "cover", backgroundPosition: "center" } : {}}
     >
       <div className="flex gap-3 md:gap-0 justify-between items-center w-full md:w-auto">
@@ -50,7 +50,7 @@ const Nav = () => {
               <div
                 onClick={() => setIsOpen(false)}
                 className={`flex justify-center rounded-full items-center h-10 text-sm hover:bg-cs-red hover:text-white font-bold px-6 cursor-pointer transition duration-400
-                  ${pathname === href ? 'bg-cs-red text-white' : 'bg-white text-black'}
+                  ${pathname === href ? 'bg-cs-red text-white' : 'bg-white text-gray-900'}
                 `}
               >
                 {label}

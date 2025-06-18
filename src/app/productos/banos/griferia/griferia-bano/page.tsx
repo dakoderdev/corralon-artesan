@@ -12,7 +12,7 @@ import ProductItem from "../../../ProductItem";
 
 export default function Page() {
     return (
-        <main className="font-grotesk bg-gradient-to-br from-gray-50 to-gray-100 mb-6 px-4 sm:px-6 lg:px-16 py-12">
+        <main className="font-grotesk bg-gradient-to-br from-gray-50 to-gray-100   px-4 sm:px-6 lg:px-16 py-12">
             <Back name="Grifería" path="/productos/banos/griferia" />
             <h3 className="text-3xl pb-4 w-fit font-bold text-gray-900">Grifería Bronce</h3>
             <div className="grid pb-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">

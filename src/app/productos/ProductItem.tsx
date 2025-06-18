@@ -10,12 +10,12 @@ export default function ProductItem(props: {
   const { name, image, path = "/", clickable = true } = props;
 
   return (
-    <div className={`group w-full min-h-70 bg-white rounded-2xl overflow-hidden border border-gray-200 p-3 sm:p-0 ${clickable ? 'cursor-pointer transition-all duration-300 hover:-translate-y-0.5  hover:shadow-lg' : 'shadow-lg'}`}>
+    <div className={`group w-full min-h-70 bg-white rounded-2xl overflow-hidden border border-gray-200 has-focus-visible:outline-2 p-3 sm:p-0 ${clickable ? 'cursor-pointer transition-all duration-300 hover:-translate-y-0.5  hover:shadow-lg' : 'shadow-lg/2'}`}>
       {clickable ? (
         <Link href={path}>
           <Image src={image} className="w-full object-cover aspect-5/4 lg:aspect-square rounded-lg sm:rounded-none" width={500} height={500} alt={name} />
           <div className="flex gap-1.25 items-center p-4">
-            <h3 className="text-2xl w-fit font-bold text-gray-900">{name}</h3>
+            <h3 className="text-2xl w-fit font-semibold text-gray-900">{name}</h3>
             <svg
               className="w-5 h-5 mt-1 text-gray-400 transition duration-300 transform group-hover:translate-x-0.5"
               fill="none"
@@ -31,7 +31,7 @@ export default function ProductItem(props: {
         <>
           <Image src={image} className="w-full object-cover aspect-5/4 lg:aspect-square rounded-lg sm:rounded-none" width={400} height={400} alt={name} />
           <div className="flex gap-1.25 items-center p-4">
-            <h3 className="text-xl w-fit font-bold text-gray-800">{name}</h3>
+            <h3 className="text-xl w-fit font-semibold text-gray-800">{name}</h3>
           </div>
         </>
       )}

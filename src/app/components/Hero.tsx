@@ -24,7 +24,7 @@ function ArrowLeft() {
 
 function Slide1() {
   return (
-    <div className="w-screen h-dvh grid sm:grid-cols-2 gap-4 sm:gap-12 bg-[url(/imagenes/marble.webp)] bg-cover bg-center p-8 pt-14 sm:p-14 slides">
+    <div className=" w-full h-dvh grid sm:grid-cols-2 gap-4 sm:gap-12 bg-[url(/imagenes/marble.webp)] bg-cover bg-center p-8 pt-14 sm:p-14 slides">
       <div className="place-self-center">
         <h1 className="text-5xl mb-4 sm:mb-8 font-bold font-mono">La mejor elección cuando se trata de tu hogar</h1>
         <Link
@@ -36,7 +36,7 @@ function Slide1() {
         </Link>
       </div>
       <div className="place-self-center">
-        <Image className="w-70 h-70 sm:h-112.5 sm:w-112.5" width={450} height={450} src="/logos/logo-white.svg" alt="Logo de Corralon Artesan en blanco" />
+        <Image className="w-70 h-70 sm:h-112.5 sm:w-112.5" width={450} height={450} src="/logos/logo-white.svg" priority={true} alt="Logo de Corralon Artesan en blanco" />
       </div>
     </div>
   );
@@ -44,7 +44,7 @@ function Slide1() {
 
 function Slide2() {
   return (
-    <div className="w-screen h-dvh flex flex-col gap-4 items-baseline justify-end bg-[url(/imagenes/baño.jpg)] bg-cover bg-center p-8 pt-14 sm:p-14 slides">
+    <div className=" w-full h-dvh flex flex-col gap-4 items-baseline justify-end bg-[url(/imagenes/baño.jpg)] bg-cover bg-center p-8 pt-14 sm:p-14 slides">
       <h1 className="text-5xl font-bold font-mono">BAÑO</h1>
       <Link href="/productos/banos" className="bg-cs-red hover:bg-black py-2 px-4 hover:text-white focus:text-white rounded-full transition duration-300">Ver Más</Link>
     </div>
@@ -53,7 +53,7 @@ function Slide2() {
 
 function Slide3() {
   return (
-    <div className="w-screen h-dvh flex flex-col gap-4 items-baseline bg-[url(/imagenes/ceramicos.webp)] bg-cover bg-center p-8 pt-14 sm:p-14 slides">
+    <div className=" w-full h-dvh flex flex-col gap-4 items-baseline bg-[url(/imagenes/ceramicos.webp)] bg-cover bg-center p-8 pt-14 sm:p-14 slides">
       <h1 className="text-5xl font-bold font-mono">CERÁMICOS</h1>
       <a href="/productos/construccion/ceramicos" className="bg-cs-red hover:bg-black py-2 px-4 hover:text-white focus:text-white rounded-full transition duration-300">Ver Más</a>
     </div>
@@ -158,10 +158,10 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative w-screen h-dvh overflow-hidden">
+    <section className="relative  w-full h-dvh overflow-hidden">
       <div
         ref={containerRef}
-        className="flex w-[300vw] h-full ml-[-100%]"
+        className="flex w-[300%] h-full ml-[-100%]"
       >
         <Slide3 />
         <Slide1 />
@@ -171,7 +171,7 @@ export default function Hero() {
       <button
         aria-label="Slide anterior"
         onClick={() => handleArrowClick("prev")}
-        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/75 hover:bg-black bg-opacity-50 rounded-full p-2 text-white hover:bg-opacity-80 transition"
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/40 hover:bg-black/60 backdrop-blur-md bg-opacity-50 rounded-full p-2 text-white hover:bg-opacity-80 transition"
       >
         <ArrowLeft />
       </button>
@@ -179,7 +179,7 @@ export default function Hero() {
       <button
         aria-label="Slide siguiente"
         onClick={() => handleArrowClick("next")}
-        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/75 hover:bg-black bg-opacity-50 rounded-full p-2 text-white hover:bg-opacity-80 transition"
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/40 hover:bg-black/60 backdrop-blur-md bg-opacity-50 rounded-full p-2 text-white hover:bg-opacity-80 transition"
       >
         <ArrowRight />
       </button>

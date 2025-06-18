@@ -7,7 +7,7 @@ export default function ProductosPage() {
       title: "Cocina",
       image: "/imagenes/menu/muebles-de-cocina.jpg",
       href: "/productos/cocina",
-      tags: ["Mesada", "Bajo Mesada", "Mueble de cocina", "Bacha"],
+      tags: ["Mesada", "Bajo Mesada", "Bacha"],
     },
     {
       title: "Baños",
@@ -26,13 +26,13 @@ export default function ProductosPage() {
   const promos = [
     {
       title: "Promo Baño Ferrum",
-      image: "/imagenes/promos/promo-baño-ferrum.avif",
-      href: "/promos/baño-ferrum",
+      image: "/imagenes/promos/promo-baño-ferrum.png",
+      href: "/productos/promos/bano-ferrum",
     },
     {
       title: "Promo Baño Capea",
-      image: "/imagenes/promos/promo-baño-capea.avif",
-      href: "/promos/baño-capea",
+      image: "/imagenes/promos/promo-baño-capea.png",
+      href: "/productos/promos/bano-capea",
     },
   ]
 
@@ -43,7 +43,7 @@ export default function ProductosPage() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-3">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Categorías</h2>
+                <h2 className="text-2xl font-bold text-gray-900  ">Categorías</h2>
 
                 <div className="space-y-4">
                   {categories.map((category, index) => (
@@ -94,7 +94,7 @@ export default function ProductosPage() {
                 </div>
               </div>
               <div className="lg:col-span-1">
-                <div className="sticky top-24">
+                <div className="block md:sticky top-24">
                   <div className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
                     <div className="p-6 border-b border-gray-100">
                       <div className="flex items-center gap-3">
