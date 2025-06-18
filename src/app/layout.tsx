@@ -3,16 +3,16 @@ import { Space_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Nav from './nav';
 import Footer from './components/Footer';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const spaceMono = Space_Mono({
-  weight: ['400','700'],
+  weight: ['400', '700'],
   variable: "--font-space-mono",
   subsets: ["latin"],
 });
 
 const spaceGrotesk = Space_Grotesk({
-  weight: ['400','500','600','700'],
+  weight: ['400', '500', '600', '700'],
   variable: "--font-space-grotesk",
   subsets: ["latin"],
 });
@@ -50,16 +50,50 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const schemaOrgJSONLD = {
+    "@context": "https://schema.org",
+    "@type": "HardwareStore",
+    "name": "Corralón Artesan",
+    "image": "https://corralonartesan.vercel.app/logo.png",
+    "@id": "https://corralonartesan.vercel.app",
+    "url": "https://corralonartesan.vercel.app",
+    "telephone": "+54 381 424-6952",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Gral. Roca 139",
+      "addressLocality": "San Miguel de Tucumán",
+      "addressRegion": "Tucumán",
+      "postalCode": "4000",
+      "addressCountry": "AR"
+    },
+    "openingHours": [
+      "Mo-Fr 08:00-13:00",
+      "Mo-Fr 15:30-18:00",
+      "Sa 08:00-13:30"
+    ],
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -26.843938,
+      "longitude": -65.202185
+    },
+    "sameAs": [
+      "https://www.facebook.com/CorralonArtesan/"
+    ]
+  };
 
   return (
     <html lang="es">
-      <body
-        className={`${spaceMono.variable} ${spaceGrotesk.variable} antialiased`}
-      >
+      <body className={`${spaceMono.variable} ${spaceGrotesk.variable} antialiased`}>
         <Nav />
         {children}
-        <Footer />   
+        <Footer />
         <SpeedInsights />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaOrgJSONLD)
+          }}
+        />
       </body>
     </html>
   );
