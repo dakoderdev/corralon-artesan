@@ -56,10 +56,10 @@ export default function RootLayout({
       <body
         className={`${spaceMono.variable} ${spaceGrotesk.variable} antialiased`}
       >
-        <SpeedInsights/>
         <Nav />
         {children}
-        <Footer />
+        <Footer />   
+        <SpeedInsights />
       </body>
     </html>
   );
