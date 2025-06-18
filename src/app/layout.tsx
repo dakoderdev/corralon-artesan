@@ -20,7 +20,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Corralón Artesan | Materiales de Construcción en Tucumán",
   description:
-    "Empresa con más de 30 años de experiencia en comercialización de materiales de construcción en Tucumán.",
+    "Con más de 30 años de experiencia, Corralón Artesan ofrece materiales de construcción de calidad en Tucumán. Atención personalizada y amplio stock disponible.",
   metadataBase: new URL("https://www.corralonartesan.vercel.app"),
   alternates: {
     canonical: "/",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Corralón Artesan | Materiales de Construcción en Tucumán",
     description:
-      "Empresa con más de 30 años de experiencia en comercialización de materiales de construcción en Tucumán.",
+      "Con más de 30 años de experiencia, Corralón Artesan ofrece materiales de construcción de calidad en Tucumán. Atención personalizada y amplio stock disponible.",
     url: "https://www.corralonartesan.vercel.app",
     type: "website",
     locale: "es_AR",
