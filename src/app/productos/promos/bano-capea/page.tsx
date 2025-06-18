@@ -1,6 +1,6 @@
 import Back from "../../Back";
 import Image from "next/image";
-import foto1 from "./foto_1.png"; //no va esta pero placeholder
+import foto1 from "./foto_1.png";
 export default function Page() {
     return (
         <main className="font-grotesk bg-gradient-to-br from-gray-50 to-gray-100 px-4 sm:px-6 lg:px-16 py-12">
