@@ -24,7 +24,7 @@ function ArrowLeft() {
 
 function Slide1() {
   return (
-    <div className=" w-full h-dvh grid sm:grid-cols-2 gap-4 sm:gap-12 bg-[url(/imagenes/marble.webp)] bg-cover bg-center p-8 pt-14 sm:p-14 slides">
+    <div className=" w-full h-svh grid sm:grid-cols-2 gap-4 sm:gap-12 bg-[url(/imagenes/marble.webp)] bg-cover bg-center p-8 pt-14 sm:p-14 slides">
       <div className="place-self-center">
         <h1 className="text-5xl mb-4 sm:mb-8 font-bold font-mono">La mejor elección cuando se trata de tu hogar</h1>
         <Link
@@ -44,7 +44,7 @@ function Slide1() {
 
 function Slide2() {
   return (
-    <div className=" w-full h-dvh flex flex-col gap-4 items-baseline justify-end bg-[url(/imagenes/baño.jpg)] bg-cover bg-center p-8 pt-14 sm:p-14 slides">
+    <div className=" w-full h-svh flex flex-col gap-4 items-baseline justify-end bg-[url(/imagenes/baño.jpg)] bg-cover bg-center p-8 pt-14 sm:p-14 slides">
       <h1 className="text-5xl font-bold font-mono">BAÑO</h1>
       <Link href="/productos/banos" className="bg-cs-red hover:bg-black py-2 px-4 hover:text-white focus:text-white rounded-full transition duration-300">Ver Más</Link>
     </div>
@@ -53,7 +53,7 @@ function Slide2() {
 
 function Slide3() {
   return (
-    <div className=" w-full h-dvh flex flex-col gap-4 items-baseline bg-[url(/imagenes/ceramicos.webp)] bg-cover bg-center p-8 pt-14 sm:p-14 slides">
+    <div className=" w-full h-svh flex flex-col gap-4 items-baseline bg-[url(/imagenes/ceramicos.webp)] bg-cover bg-center p-8 pt-14 sm:p-14 slides">
       <h1 className="text-5xl font-bold font-mono">CERÁMICOS</h1>
       <a href="/productos/construccion/ceramicos" className="bg-cs-red hover:bg-black py-2 px-4 hover:text-white focus:text-white rounded-full transition duration-300">Ver Más</a>
     </div>
@@ -158,7 +158,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative  w-full h-dvh overflow-hidden">
+    <section className="relative  w-full h-svh overflow-hidden">
       <div
         ref={containerRef}
         className="flex w-[300%] h-full ml-[-100%]"

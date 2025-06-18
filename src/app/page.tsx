@@ -1,6 +1,7 @@
 import Hero from './components/Hero';
 import ProductsMenu from './components/ProductsMenu';
 import AboutUs from './components/AboutUs';
+import IsClosed from './components/IsClosed';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <ProductsMenu />
       <AboutUs />
+      <IsClosed />
     </main>
   );
 }

@@ -38,7 +38,7 @@ export default function ProductosPage() {
 
   return (
     <>
-      <main className="font-grotesk min-h-dvh bg-gradient-to-br from-gray-50 to-gray-100">
+      <main className="font-grotesk min-h-svh bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="px-4 sm:px-6 lg:px-16 py-12">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
