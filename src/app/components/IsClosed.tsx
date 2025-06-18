@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 
 export default function IsClosed() {
   const now = new Date();
@@ -11,7 +11,7 @@ export default function IsClosed() {
   return (
     <div className={`${show ? "" : "hidden"} bg-red-100 text-red-800 p-2 px-8 w-full`} id="isClosed">
       <p className="text-base w-full text-center">
-        "Cerrado por vacaciones desde el {from} hasta el {to}"
+        Cerrado por vacaciones desde el {from} hasta el {to}
       </p>
     </div>
   );

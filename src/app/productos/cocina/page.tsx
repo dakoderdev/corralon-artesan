@@ -1,5 +1,5 @@
 import mesada from "./mesada.avif";
-import muebleDeCocina from "./mueble-de-cocina.avif";
+// import muebleDeCocina from "./mueble-de-cocina.avif";
 import bacha from "./bacha.avif";
 import griferia from "../banos/griferia.avif";
 
