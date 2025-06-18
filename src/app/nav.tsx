@@ -21,7 +21,7 @@ const Nav = () => {
             width={100}
             height={100}
             className="cursor-pointer w-auto h-8 md:h-10"
-            src="/logos/Logo.svg"
+            src="/logos/logo.svg"
             alt="Logo de Corralon Artesan"
           />
         </Link>
