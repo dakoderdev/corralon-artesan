@@ -3,6 +3,7 @@ import { Space_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Nav from './nav';
 import Footer from './components/Footer';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const spaceMono = Space_Mono({
   weight: ['400','700'],
@@ -55,6 +56,7 @@ export default function RootLayout({
       <body
         className={`${spaceMono.variable} ${spaceGrotesk.variable} antialiased`}
       >
+        <SpeedInsights/>
         <Nav />
         {children}
         <Footer />
