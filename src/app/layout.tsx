@@ -58,6 +58,7 @@ export default function RootLayout({
     "@id": "https://corralonartesan.vercel.app",
     "url": "https://corralonartesan.vercel.app",
     "telephone": "+54 381 424-6952",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Av. Gral. Roca 139",
