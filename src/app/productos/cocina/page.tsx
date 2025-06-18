@@ -2,7 +2,7 @@ import mesada from "./mesada.avif";
 // import muebleDeCocina from "./mueble-de-cocina.avif";
 import bacha from "./bacha.avif";
 import griferia from "../banos/griferia.avif";
-
+// please change the goddamn code
 import Back from "../Back";
 import ProductItem from "../ProductItem";
 
