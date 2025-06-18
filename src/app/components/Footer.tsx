@@ -2,7 +2,11 @@ export default function Footer() {
   return (
     <footer
       className="relative font-grotesk bg-gray-900 text-white overflow-hidden bg-fixed"
-      style={{ backgroundImage: 'url("/imagenes/menu/ceramicos.jpg")', backgroundSize: "cover", backgroundPosition: "center" }}
+      style={{
+        backgroundImage: 'url("/imagenes/menu/ceramicos.jpg")',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       <div className="absolute inset-0 bg-black/75 backdrop-blur-md"></div>
 
@@ -10,7 +14,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <article className="space-y-4 text-center sm:text-left">
             <div className="flex items-center space-x-3 mb-4 justify-center sm:justify-start">
-              <div className="p-2 rounded-lg" style={{ backgroundColor: "#167548" }}>
+              <div
+                className="p-2 rounded-lg"
+                style={{ backgroundColor: "#167548" }}
+              >
                 <svg
                   width="20"
                   height="20"
@@ -30,12 +37,16 @@ export default function Footer() {
             </div>
             <div className="space-y-2 text-gray-300">
               <p>
-                <span className="font-semibold text-white text-balance">Lunes a Viernes:</span>
+                <span className="font-semibold text-white text-balance">
+                  Lunes a Viernes:
+                </span>
                 <br />
                 8:30 a 18:00
               </p>
               <p>
-                <span className="font-semibold text-white text-balance">Sábado:</span>
+                <span className="font-semibold text-white text-balance">
+                  Sábado:
+                </span>
                 <br />
                 8:30 a 13:00
               </p>
@@ -44,7 +55,10 @@ export default function Footer() {
 
           <article className="space-y-4 text-center sm:text-left">
             <div className="flex items-center space-x-3 mb-4 justify-center sm:justify-start">
-              <div className="p-2 rounded-lg" style={{ backgroundColor: "#167548" }}>
+              <div
+                className="p-2 rounded-lg"
+                style={{ backgroundColor: "#167548" }}
+              >
                 <svg
                   width="20"
                   height="20"
@@ -63,7 +77,9 @@ export default function Footer() {
               <h3 className="text-lg font-bold">Ubicación</h3>
             </div>
             <p className="text-gray-300">
-              <span className="font-semibold text-white text-balance">Dirección:</span>
+              <span className="font-semibold text-white text-balance">
+                Dirección:
+              </span>
               <br />
               Av. Roca 139
             </p>
@@ -71,7 +87,10 @@ export default function Footer() {
 
           <article className="space-y-4 text-center sm:text-left">
             <div className="flex items-center space-x-3 mb-4 justify-center sm:justify-start">
-              <div className="p-2 rounded-lg" style={{ backgroundColor: "#167548" }}>
+              <div
+                className="p-2 rounded-lg"
+                style={{ backgroundColor: "#167548" }}
+              >
                 <svg
                   width="20"
                   height="20"
@@ -89,9 +108,14 @@ export default function Footer() {
               <h3 className="text-lg font-bold">Teléfono</h3>
             </div>
             <p className="text-gray-300">
-              <span className="font-semibold text-white text-balance">Llamanos:</span>
+              <span className="font-semibold text-white text-balance">
+                Llamanos:
+              </span>
               <br />
-              <a href="tel:4246952" className="hover:text-white transition-colors duration-300">
+              <a
+                href="tel:4246952"
+                className="hover:text-white transition-colors duration-300"
+              >
                 4246952
               </a>
             </p>
@@ -99,7 +123,10 @@ export default function Footer() {
 
           <article className="space-y-4 text-center sm:text-left">
             <div className="flex items-center space-x-3 mb-4 justify-center sm:justify-start">
-              <div className="p-2 rounded-lg" style={{ backgroundColor: "#167548" }}>
+              <div
+                className="p-2 rounded-lg"
+                style={{ backgroundColor: "#167548" }}
+              >
                 <svg
                   width="20"
                   height="20"
@@ -117,7 +144,9 @@ export default function Footer() {
               <h3 className="text-lg font-bold">Facebook</h3>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              <span className="font-semibold text-white text-balance">Seguinos:</span>
+              <span className="font-semibold text-white text-balance">
+                Seguinos:
+              </span>
               <br />
               Corralon Artesan Materiales de Construccion Tucuman
             </p>
@@ -127,8 +156,13 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8">
           <div className="text-center space-y-6">
             <div className="space-y-2">
-              <h3 className="text-2xl font-bold">¡Contactate y mándanos un e-Mail!</h3>
-              <p className="text-gray-300">Estamos aquí para ayudarte con todos tus proyectos de construcción</p>
+              <h3 className="text-2xl font-bold">
+                ¡Contactate y mándanos un e-Mail!
+              </h3>
+              <p className="text-gray-300">
+                Estamos aquí para ayudarte con todos tus proyectos de
+                construcción
+              </p>
             </div>
 
             <button
@@ -156,9 +190,17 @@ export default function Footer() {
 
         <div className="border-t border-white/10 mt-8 pt-6 text-center">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-            <p className="text-gray-400 text-sm">© 2025 Corralón Artesán. Todos los derechos reservados.</p>
-            <div className="flex items-center space-x-2 text-sm font-semibold" style={{ color: "#167548" }}>
-              <span className="px-3 py-1 rounded-full text-white text-xs" style={{ backgroundColor: "#167548" }}>
+            <p className="text-gray-400 text-sm">
+              © 2025 Corralón Artesán. Todos los derechos reservados.
+            </p>
+            <div
+              className="flex items-center space-x-2 text-sm font-semibold"
+              style={{ color: "#167548" }}
+            >
+              <span
+                className="px-3 py-1 rounded-full text-white text-xs"
+                style={{ backgroundColor: "#167548" }}
+              >
                 30+
               </span>
               <span className="text-gray-300">años de experiencia</span>
@@ -167,5 +209,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

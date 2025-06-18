@@ -1,6 +1,6 @@
 import membranas from "./membranas.avif";
 import ceramicos from "./ceramicos.avif";
-import tanques from "./tanques.avif";
+import tanques from "./tanques/tanque-waterplast.webp";
 import aberturas from "./aberturas.avif";
 import piletasDeCemento from "./piletas-de-cemento.avif";
 import cañosYAccesorios from "./caños-y-accesorios.avif";

@@ -98,16 +98,19 @@ export default function AboutUs() {
       title: "Honestidad y seriedad",
       description: "Compromiso con la calidad y confianza",
     },
-  ]
+  ];
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-gray-100">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-5xl font-bold font-mono  ">SOBRE NOSOTROS</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold font-mono  ">
+            SOBRE NOSOTROS
+          </h2>
           <p className="text-lg sm:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            Somos una empresa dedicada a la comercialización de materiales de construcción con una trayectoria de más de
-            30 años en el rubro. Nuestras cualidades son:
+            Somos una empresa dedicada a la comercialización de materiales de
+            construcción con una trayectoria de más de 30 años en el rubro.
+            Nuestras cualidades son:
           </p>
         </div>
 
@@ -116,7 +119,12 @@ export default function AboutUs() {
             <div
               key={index}
               className="group bg-white p-6 rounded-xl hover:shadow-lg hover:border-green-200 transition-all duration-300 hover:-translate-y-0.5"
-              style={{ "--color-cs-green": "#167548", "--color-cs-red": "#FF6161" } as React.CSSProperties}
+              style={
+                {
+                  "--color-cs-green": "#167548",
+                  "--color-cs-red": "#FF6161",
+                } as React.CSSProperties
+              }
             >
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 p-3 bg-green-50 rounded-lg group-hover:bg-green-100 transition-colors duration-300">
@@ -131,24 +139,22 @@ export default function AboutUs() {
                   <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-green-900 transition-colors duration-300">
                     {quality.title}
                   </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{quality.description}</p>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {quality.description}
+                  </p>
                 </div>
               </div>
             </div>
           ))}
         </div>
-
+        
         <div className="mt-12 text-center">
-          <div
-            className="inline-flex bg-cs-green items-center px-6 py-3 text-white rounded-lg font-medium hover:opacity-90 transition-all duration-300 cursor-pointer"
-          >
-            <span className="text-lg font-bold mr-2">
-              30+
-            </span>
+          <div className="inline-flex bg-cs-green items-center px-6 py-3 text-white rounded-lg font-medium hover:opacity-90 transition-all duration-300 cursor-pointer">
+            <span className="text-lg font-bold mr-2">30+</span>
             <span>años de experiencia en el rubro</span>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

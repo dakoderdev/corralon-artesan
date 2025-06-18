@@ -6,7 +6,7 @@ export default function Page() {
         <main className="font-grotesk bg-gradient-to-br from-gray-50 to-gray-100 px-4 sm:px-6 lg:px-16 py-12">
             <Back name="Promo" path="/productos" />
             <h3 className="text-5xl text-center pb-2 font-mono font-bold text-gray-900">PROMO BAÑO FERRUM</h3>
-            <p className="text-center pb-12 text-gray-600">Esta promo contiene:</p>
+            <p className="text-center pb-10 text-gray-600">Esta promo contiene:</p>
             <ul className="list-disc w-full max-w-162 text-lg/loose list-inside text-balance m-auto pb-12">
                 <li>Inodoro, Bidet, Lavatorio y pie. (FERRUM ANDINA)</li>
                 <li>Mochila FERRUM de Loza COMPLETA con todos sus accesorios internos</li>
