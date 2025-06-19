@@ -2,8 +2,8 @@ import Back from "../../Back";
 import ProductItem from "../../ProductItem";
 
 import tanqueWaterplast from "./tanque-waterplast.webp";
-import tanqueH2o from "./tanque-h2o.avif";
-import tanqueTinacos from "./tanque-tinacos.avif";
+import tanqueH2o from "./tanque-h2o.png";
+import tanqueTinacos from "./tanque-tinacos.png";
 export default function Page() {
     return (
         <main className="font-grotesk bg-gradient-to-br from-gray-50 to-gray-100   px-4 sm:px-6 lg:px-16 py-12">
