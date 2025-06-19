@@ -28,7 +28,7 @@ const Nav = () => {
         <button
           onClick={() => setIsOpen(!isOpen)}
           name='mobile-toggle-nav'
-          className="md:hidden text-white focus:outline-none"
+          className="md:hidden text-white focus-visible:scale-115 focus-visible:opacity-90 transition duration-300"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
             {isOpen ? (
