@@ -59,7 +59,7 @@ export default function Page() {
                         ))}
                     </div>
                 </div>
-                <div className="w-full md:w-120 h-fit block md:sticky top-3">
+                <div className="w-full md:w-120 h-fit md:pb-18.5 block md:sticky top-3">
                     <h3 className="text-3xl pb-4 w-fit font-bold text-gray-900">Medidas</h3>
                     <ul className="grid grid-cols-2 gap-1.5 font-mono">
                         <li className="p-2 bg-white border border-gray-200 rounded-lg flex justify-center items-center">1,2</li>
