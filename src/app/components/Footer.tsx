@@ -171,8 +171,7 @@ export default function Footer() {
             </div>
 
             <button
-              className="inline-flex cursor-pointer items-center px-8 py-3 text-white font-semibold rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-lg"
-              style={{ backgroundColor: "#FF6161" }}
+              className="inline-flex cursor-pointer items-center px-8 py-3 text-white font-semibold rounded-lg bg-cs-red hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-lg"
               onClick={() => setShowDialog(true)}
             >
               <svg
@@ -234,7 +233,7 @@ export default function Footer() {
                     </button>
                     </div>
                   <button
-                    className="mt-4 cursor-pointer px-4 py-2 bg-cs-red text-white rounded-lg hover:opacity-90 hover:scale-110 transition mx-auto block"
+                    className="mt-2 cursor-pointer px-4 py-1.5 bg-cs-red text-white font-semibold rounded-lg hover:opacity-90 hover:scale-105 transition mx-auto block"
                     onClick={() => setShowDialog(false)}
                   >
                     Cerrar
