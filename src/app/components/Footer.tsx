@@ -1,4 +1,9 @@
+"use client";
+import { useState } from "react";
+
 export default function Footer() {
+  const [showDialog, setShowDialog] = useState(false);
+  const email = "artesansh@yahoo.com";
   return (
     <footer
       className="relative font-grotesk bg-gray-900 text-white overflow-hidden bg-fixed"
@@ -156,9 +161,9 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8">
           <div className="text-center space-y-6">
             <div className="space-y-2">
-              <h3 className="text-2xl font-bold">
+              <button className="text-2xl font-bold">
                 ¡Contactate y mándanos un e-Mail!
-              </h3>
+              </button>
               <p className="text-gray-300">
                 Estamos aquí para ayudarte con todos tus proyectos de
                 construcción
@@ -168,6 +173,7 @@ export default function Footer() {
             <button
               className="inline-flex items-center px-8 py-3 text-white font-semibold rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-lg"
               style={{ backgroundColor: "#FF6161" }}
+              onClick={() => setShowDialog(true)}
             >
               <svg
                 width="20"
@@ -185,6 +191,58 @@ export default function Footer() {
               </svg>
               Enviar Email
             </button>
+
+            {showDialog && (
+              <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+                <div className="bg-white text-gray-900 rounded-lg shadow-lg p-8 max-w-sm w-full relative">
+                  <button
+                    className="absolute top-1.5 right-1.5 px-1.5 cursor-pointer text-3xl text-gray-500 hover:text-gray-800"
+                    onClick={() => setShowDialog(false)}
+                    aria-label="Cerrar"
+                  >
+                    ×
+                  </button>
+                  <h2 className="text-lg font-bold mb-4">Dirección de Email</h2>
+                    <div className="flex items-center justify-center gap-2">
+                    <p className="mb-2 break-all text-center text-base w-fit px-3 py-1 bg-gray-100 border border-gray-300 rounded-md">
+                      {email}
+                    </p>
+                    <button
+                      className="mb-2 p-1.75 rounded-md cursor-pointer hover:bg-gray-200 active:bg-gray-300 transition-colors"
+                      title="Copiar email"
+                      onClick={() => {
+                      navigator.clipboard.writeText(email);
+                      }}
+                      aria-label="Copiar email"
+                      type="button"
+                    >
+                      {/* Lucide Copy Icon SVG */}
+                      <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-gray-700"
+                      >
+                      <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                      <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" />
+                      </svg>
+                    </button>
+                    </div>
+                  <button
+                    className="mt-4 px-4 py-2 bg-cs-red text-white rounded-lg hover:opacity-90 hover:scale-110 transition mx-auto block"
+                    onClick={() => setShowDialog(false)}
+                  >
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
 

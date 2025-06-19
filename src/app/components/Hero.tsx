@@ -171,7 +171,7 @@ export default function Hero() {
       <button
         aria-label="Slide anterior"
         onClick={() => handleArrowClick("prev")}
-        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/40 hover:bg-black/60 backdrop-blur-md bg-opacity-50 rounded-full p-2 text-white hover:bg-opacity-80 transition"
+        className="absolute cursor-pointer top-1/2 left-2 transform -translate-y-1/2 bg-black/40 hover:bg-black/60 backdrop-blur-md bg-opacity-50 rounded-full p-2 text-white hover:bg-opacity-80 transition"
       >
         <ArrowLeft />
       </button>
@@ -179,7 +179,7 @@ export default function Hero() {
       <button
         aria-label="Slide siguiente"
         onClick={() => handleArrowClick("next")}
-        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/40 hover:bg-black/60 backdrop-blur-md bg-opacity-50 rounded-full p-2 text-white hover:bg-opacity-80 transition"
+        className="absolute cursor-pointer top-1/2 right-2 transform -translate-y-1/2 bg-black/40 hover:bg-black/60 backdrop-blur-md bg-opacity-50 rounded-full p-2 text-white hover:bg-opacity-80 transition"
       >
         <ArrowRight />
       </button>

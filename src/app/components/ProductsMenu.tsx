@@ -13,7 +13,7 @@ export default function ProductsMenu() {
             width={500}
             height={500}
             src="/imagenes/menu/griferias.jpg"
-            className="absolute inset-0 group-hover:scale-120 transition-transform duration-350 object-cover w-full h-60 sm:h-72 lg:h-full"
+            className="absolute inset-0 group-hover:scale-120 group-focus-visible:scale-120  transition-transform duration-350 object-cover w-full h-60 sm:h-72 lg:h-full"
             alt="Griferias"
           />
         </div>
@@ -30,7 +30,7 @@ export default function ProductsMenu() {
             width={500}
             height={500}
             src="/imagenes/menu/ceramicos.jpg"
-            className="absolute inset-0 group-hover:scale-120 transition-transform duration-350 object-cover w-full h-60 sm:h-72 lg:h-full"
+            className="absolute inset-0 group-hover:scale-120 group-focus-visible:scale-120  transition-transform duration-350 object-cover w-full h-60 sm:h-72 lg:h-full"
             alt="Cerámicos"
           />
         </div>
@@ -47,7 +47,7 @@ export default function ProductsMenu() {
             width={500}
             height={500}
             src="/imagenes/menu/tanques.jpg"
-            className="absolute inset-0 group-hover:scale-120 transition-transform duration-350 object-contain w-full h-60 sm:h-72 lg:h-full"
+            className="absolute inset-0 group-hover:scale-120 group-focus-visible:scale-120  transition-transform duration-350 object-contain w-full h-60 sm:h-72 lg:h-full"
             alt="Tanques"
           />
         </div>
@@ -64,7 +64,7 @@ export default function ProductsMenu() {
             width={500}
             height={500}
             src="/imagenes/menu/muebles-de-cocina.jpg"
-            className="absolute inset-0 group-hover:scale-120 transition-transform duration-350 object-cover w-full h-60 sm:h-72 lg:h-full"
+            className="absolute inset-0 group-hover:scale-120 group-focus-visible:scale-120  transition-transform duration-350 object-cover w-full h-60 sm:h-72 lg:h-full"
             alt="Mesada"
           />
         </div>
@@ -81,7 +81,7 @@ export default function ProductsMenu() {
             width={500}
             height={500}
             src="/imagenes/menu/mat-de-construccion.webp"
-            className="absolute inset-0 group-hover:scale-120 transition-transform duration-350 object-cover w-full h-60 sm:h-72 lg:h-full"
+            className="absolute inset-0 group-hover:scale-120 group-focus-visible:scale-120  transition-transform duration-350 object-cover w-full h-60 sm:h-72 lg:h-full"
             alt="Materiales de Construcción"
           />
         </div>
@@ -98,7 +98,7 @@ export default function ProductsMenu() {
             width={500}
             height={500}
             src="/imagenes/menu/membranas.webp"
-            className="absolute inset-0 group-hover:scale-120 transition-transform duration-350 object-cover w-full h-60 sm:h-72 lg:h-full"
+            className="absolute inset-0 group-hover:scale-120 group-focus-visible:scale-120  transition-transform duration-350 object-cover w-full h-60 sm:h-72 lg:h-full"
             alt="Membranas"
           />
         </div>
@@ -115,7 +115,7 @@ export default function ProductsMenu() {
             width={500}
             height={500}
             src="/imagenes/menu/caños-y-accesorios.webp"
-            className="absolute inset-0 group-hover:scale-120 transition-transform duration-350 object-cover w-full h-60 sm:h-72 lg:h-full"
+            className="absolute inset-0 group-hover:scale-120 group-focus-visible:scale-120  transition-transform duration-350 object-cover w-full h-60 sm:h-72 lg:h-full"
             alt="Caños y Accesorios"
           />
         </div>
