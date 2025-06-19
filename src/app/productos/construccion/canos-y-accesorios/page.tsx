@@ -1,6 +1,6 @@
 import Back from "../../Back";
 
-import polipropileno from "./polipropileno.avif";
+import polipropileno from "./polipropileno.png";
 import fusionAgua from "./fusion-agua.jpg";
 import polietileno from "./polietileno.avif";
 

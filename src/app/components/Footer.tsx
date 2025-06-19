@@ -153,7 +153,7 @@ export default function Footer() {
                 Seguinos:
               </span>
               <br />
-              Corralon Artesan Materiales de Construccion Tucuman
+              Corralon Artesan Materiales de Construcción Tucuman
             </p>
           </article>
         </div>

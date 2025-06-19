@@ -3,7 +3,7 @@ import ceramicos from "./ceramicos.avif";
 import tanques from "./tanques/tanque-waterplast.webp";
 import aberturas from "./aberturas.avif";
 import piletasDeCemento from "./piletas-de-cemento.avif";
-import cañosYAccesorios from "./caños-y-accesorios.avif";
+import cañosYAccesorios from "./canos-y-accesorios/polipropileno.png";
 
 import Back from "../Back";
 import ProductItem from "../ProductItem";
