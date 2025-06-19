@@ -54,6 +54,7 @@ export default function ProductosPage() {
                       <div className="relative w-full sm:w-40 h-40 sm:h-auto overflow-hidden rounded-md sm:rounded-none sm:rounded-l-2xl">
                         <Image
                           src={category.image || "/placeholder.svg"}
+                          priority={true}
                           className="w-full h-full object-cover"
                           width={160}
                           height={160}
@@ -127,6 +128,7 @@ export default function ProductosPage() {
                           <div className="relative h-24 overflow-hidden">
                             <Image
                               src={promo.image || "/placeholder.svg"}
+                              priority={true}
                               className="w-full h-full object-cover transition-transform duration-500"
                               width={200}
                               height={96}
