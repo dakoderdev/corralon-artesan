@@ -216,7 +216,6 @@ export default function Footer() {
                       aria-label="Copiar email"
                       type="button"
                     >
-                      {/* Lucide Copy Icon SVG */}
                       <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -235,7 +234,7 @@ export default function Footer() {
                     </button>
                     </div>
                   <button
-                    className="mt-4 px-4 py-2 bg-cs-red text-white rounded-lg hover:opacity-90 hover:scale-110 transition mx-auto block"
+                    className="mt-4 cursor-pointer px-4 py-2 bg-cs-red text-white rounded-lg hover:opacity-90 hover:scale-110 transition mx-auto block"
                     onClick={() => setShowDialog(false)}
                   >
                     Cerrar
