@@ -171,7 +171,7 @@ export default function Footer() {
             </div>
 
             <button
-              className="inline-flex items-center px-8 py-3 text-white font-semibold rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-lg"
+              className="inline-flex cursor-pointer items-center px-8 py-3 text-white font-semibold rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-lg"
               style={{ backgroundColor: "#FF6161" }}
               onClick={() => setShowDialog(true)}
             >
