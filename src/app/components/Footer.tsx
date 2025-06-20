@@ -161,9 +161,9 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8">
           <div className="text-center space-y-6">
             <div className="space-y-2">
-              <h6 className="text-2xl font-bold">
+              <h4 className="text-2xl font-bold">
                 ¡Contactate y mándanos un e-Mail!
-              </h6>
+              </h4>
               <p className="text-gray-300">
                 Estamos aquí para ayudarte con todos tus proyectos de
                 construcción
