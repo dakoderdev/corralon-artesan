@@ -12,7 +12,7 @@ const Nav = () => {
 
   return (
     <nav
-      className={`${isOpen ? "w-[calc(100%-1rem)] h-fit rounded-xl p-8" : "py-1.5 px-3 md:p-3 w-fit rounded-lg"} bg-center bg-cover left-2 top-2 md:left-1/2 z-50 font-mono fixed md:-translate-x-1/2 flex flex-col md:flex-row bg-black/35 backdrop-blur-sm shadow-lg md:items-center md:h-15 md:gap-5 transition-all duration-500`}
+      className={`${isOpen ? "w-[calc(100%-1rem)] h-fit rounded-xl p-8" : "py-1.5 px-3 md:p-3 w-fit rounded-lg"} bg-center md:w-fit bg-cover left-2 top-2 md:left-1/2 z-50 font-mono fixed md:-translate-x-1/2 flex flex-col md:flex-row bg-black/35 backdrop-blur-sm shadow-lg md:items-center md:h-15 md:gap-5 transition-all duration-500`}
       style={isOpen ? { backgroundImage: `url(${backgroundImageURL})` } : {}}
     >
       <div className="flex gap-3 md:gap-0 justify-between items-center w-full md:w-auto">
@@ -20,15 +20,15 @@ const Nav = () => {
           <Image
             width={100}
             height={100}
-            className="cursor-pointer w-auto h-8 md:h-10"
+            className="cursor-pointer w-7 h-8 md:min-w-8.75 md:w-8.75 md:h-10"
             src="/logos/logo.svg"
             alt="Logo de Corralon Artesan"
           />
         </Link>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          name='mobile-toggle-nav'
-          className="md:hidden text-white focus-visible:scale-115 focus-visible:opacity-90 transition duration-300"
+          aria-label='mobile-toggle-nav'
+          className="md:hidden text-white hover:scale-115 cursor-pointer focus-visible:scale-115 hover:opacity-90 focus-visible:opacity-90 transition duration-300"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
             {isOpen ? (

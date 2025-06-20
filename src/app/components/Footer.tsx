@@ -161,9 +161,9 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8">
           <div className="text-center space-y-6">
             <div className="space-y-2">
-              <button className="text-2xl font-bold">
+              <h6 className="text-2xl font-bold">
                 ¡Contactate y mándanos un e-Mail!
-              </button>
+              </h6>
               <p className="text-gray-300">
                 Estamos aquí para ayudarte con todos tus proyectos de
                 construcción
@@ -171,7 +171,8 @@ export default function Footer() {
             </div>
 
             <button
-              className="inline-flex cursor-pointer items-center px-8 py-3 text-white font-semibold rounded-lg bg-cs-red hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-lg"
+              aria-label="Abrir dialogo de Email"
+              className="inline-flex cursor-pointer items-center px-8 py-3 text-black font-semibold rounded-lg bg-cs-red hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-lg"
               onClick={() => setShowDialog(true)}
             >
               <svg
@@ -233,7 +234,8 @@ export default function Footer() {
                     </button>
                     </div>
                   <button
-                    className="mt-2 cursor-pointer px-4 py-1.5 bg-cs-red text-white font-semibold rounded-lg hover:opacity-90 hover:scale-105 transition mx-auto block"
+                    aria-label="Cerrar dialogo de Email"
+                    className="mt-2 cursor-pointer px-4 py-1.5 bg-cs-red text-black font-semibold rounded-lg hover:opacity-90 hover:scale-105 transition mx-auto block"
                     onClick={() => setShowDialog(false)}
                   >
                     Cerrar

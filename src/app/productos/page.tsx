@@ -5,18 +5,21 @@ export default function ProductosPage() {
   const categories = [
     {
       title: "Cocina",
+      alt: "Una cocina moderna",
       image: "/imagenes/menu/muebles-de-cocina.jpg",
       href: "/productos/cocina",
       tags: ["Mesada", "Bajo Mesada", "Bacha"],
     },
     {
       title: "Baños",
+      alt: "Un inodoro y un bidet",
       image: "/imagenes/baño.jpg",
       href: "/productos/banos",
       tags: ["Inodoro", "Bidet", "Grifería", "Lavatorio", "Deposito"],
     },
     {
       title: "Mat. de Construcción",
+      alt: "Ladrillos, cemento y otros materiales de construcción",
       image: "/imagenes/menu/mat-de-construccion.webp",
       href: "/productos/construccion",
       tags: ["Membranas", "Cerámicos", "Tanques", "Aberturas", "Piletas Cemento"],
@@ -26,11 +29,13 @@ export default function ProductosPage() {
   const promos = [
     {
       title: "Promo Baño Ferrum",
+      alt: "Un set de baño tipo Ferrum",
       image: "/imagenes/promos/promo-baño-ferrum.png",
       href: "/productos/promos/bano-ferrum",
     },
     {
       title: "Promo Baño Capea",
+      alt: "Un set de baño tipo Capea",
       image: "/imagenes/promos/promo-baño-capea.png",
       href: "/productos/promos/bano-capea",
     },
@@ -58,7 +63,7 @@ export default function ProductosPage() {
                           className="w-full h-full object-cover"
                           width={160}
                           height={160}
-                          alt={category.title}
+                          alt={category.alt}
                         />
                       </div>
 
@@ -132,7 +137,7 @@ export default function ProductosPage() {
                               className="w-full h-full object-cover transition-transform duration-500"
                               width={200}
                               height={96}
-                              alt={promo.title}
+                              alt={promo.alt}
                             />
                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
