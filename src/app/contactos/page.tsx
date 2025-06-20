@@ -1,3 +1,11 @@
+import { Metadata } from "next";
+const title = "Contactos";
+const titleDefault = title + " | Corralón Artesan | Materiales de Construcción en Tucumán";
+export const metadata: Metadata = {
+  title: titleDefault,
+  description: 'Contactate con nosotros para más información sobre nuestros productos y servicios.',
+}
+
 export default function Page() {
   return (
     <section

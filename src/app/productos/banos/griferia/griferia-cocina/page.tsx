@@ -8,10 +8,18 @@ import sobreMesadaVenirPlus from "./sobre-mesada-venir-plus.avif";
 
 import Back from "../../../Back";
 import ProductItem from "../../../ProductItem";
+import { Metadata } from "next";
+const title = "Grifería Cocina";
+const titleDefault = title + " | Corralón Artesan | Materiales de Construcción en Tucumán";
+
+export const metadata: Metadata = {
+  title: titleDefault,
+  description: 'Griferias de cocina Oval y Peirano disponibles en Corralón Artesan',
+}
 export default function Page() {
     return (
         <main className="font-grotesk bg-gradient-to-br from-gray-50 to-gray-100   px-4 sm:px-6 lg:px-16 py-12">
-            <Back name="Grifería Cocina" />
+            <Back name={title} />
             <h3 className="text-3xl pb-4 w-fit font-bold text-gray-900">Oval</h3>
             <div className="grid pb-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
                 <ProductItem name="Sobre Mesada Alegría" image={sobreMesadaAlegria} clickable={false}/>

@@ -1,6 +1,15 @@
 import Back from "../../Back";
 import Image from "next/image";
 import foto1 from "./foto_1.png";
+import { Metadata } from "next";
+
+const title = "Promo Baño Capea";
+const titleDefault = title + " | Corralón Artesan | Materiales de Construcción en Tucumán";
+
+export const metadata: Metadata = {
+  title: titleDefault,
+  description: 'Descubre la Promo Baño Capea en Corralón Artesan. Incluye inodoro, bidet, lavatorio, grifería y accesorios completos.',
+}
 export default function Page() {
     return (
         <main className="font-grotesk bg-gradient-to-br from-gray-50 to-gray-100 px-4 sm:px-6 lg:px-16 py-12">

@@ -18,8 +18,8 @@ const Nav = () => {
       <div className="flex gap-3 md:gap-0 justify-between items-center w-full md:w-auto">
         <Link href={"/"}>
           <Image
-            width={100}
-            height={100}
+            width={35}
+            height={40}
             className="cursor-pointer w-7 h-8 md:min-w-8.75 md:w-8.75 md:h-10"
             src="/logos/logo.svg"
             alt="Logo de Corralon Artesan"

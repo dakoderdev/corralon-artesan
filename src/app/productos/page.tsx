@@ -1,5 +1,14 @@
 import Image from "next/image"
 import Link from "next/link"
+import { Metadata } from "next"
+
+const title = "Productos"
+const titleDefault = title + " | Corralón Artesan | Materiales de Construcción en Tucumán";
+
+export const metadata: Metadata = {
+  title: titleDefault,
+  description: 'Descubre nuestros productos como mesadas, griferías, inodoros y más en Corralón Artesan. Ofrecemos una amplia variedad de productos y promociones.',
+}
 
 export default function ProductosPage() {
   const categories = [

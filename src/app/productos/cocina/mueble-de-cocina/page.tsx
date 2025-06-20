@@ -13,11 +13,20 @@ import muebleOnce from "./mueble_11.jpg";
 import muebleDoce from "./mueble_12.jpg";
 
 import Image from "next/image";
+import { Metadata } from "next";
+const title = "Mueble de Cocina";
+const titleDefault = title + " | Corralón Artesan | Materiales de Construcción en Tucumán";
+
+export const metadata: Metadata = {
+  title: titleDefault,
+  description: 'Ahora mismo no disponibles',
+}
 
 export default function Page() {
     return (
         <main className="font-grotesk bg-gradient-to-br from-gray-50 to-gray-100   px-4 sm:px-6 lg:px-16 py-12">
-            <Back name="Mueble de Cocina" />
+            <Back name={title} />
+            <p className="text-gray-500 text-sm mb-4">Ahora mismo no disponibles</p>
             <div className="grid md:grid-cols-2 gap-3">
                 <article className="flex flex-col sm:flex-row h-full sm:h-44 w-full bg-white rounded-2xl border border-gray-200">
                     <h3 className="grid place-items-center border-r border-gray-200 text-3xl font-mono font-bold text-gray-500 h-full py-4 sm:px-8">1.2</h3>

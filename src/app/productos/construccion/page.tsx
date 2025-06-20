@@ -7,11 +7,20 @@ import cañosYAccesorios from "./canos-y-accesorios/polipropileno.png";
 
 import Back from "../Back";
 import ProductItem from "../ProductItem";
+import { Metadata } from "next";
+
+const title = "Mat. de Construcción";
+const titleDefault = title + " | Corralón Artesan | Materiales de Construcción en Tucumán";
+
+export const metadata: Metadata = {
+  title: titleDefault,
+  description: 'Descubre nuestros productos de materiales de construcción en Corralón Artesan.',
+}
 
 export default function Page() {
     return (
         <main className="font-grotesk bg-gradient-to-br from-gray-50 to-gray-100   px-4 sm:px-6 lg:px-16 py-12">
-            <Back name="Mat. de Construcción" />
+            <Back name={title} />
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
                 <ProductItem name="Membranas" image={membranas} path="construccion/membranas" />
                 <ProductItem name="Céramicos" image={ceramicos} path="construccion/ceramicos" />

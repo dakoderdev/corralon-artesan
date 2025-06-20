@@ -16,11 +16,19 @@ import granitoRojo from "./granito-rojo.avif";
 import granitoAmarillo from "./granito-amarillo.avif";
 
 import Image from "next/image";
+import { Metadata } from "next";
+const title = "Mesada";
+const titleDefault = title + " | Corralón Artesan | Materiales de Construcción en Tucumán";
+
+export const metadata: Metadata = {
+  title: titleDefault,
+  description: 'Mesadas Gris Mara, Gris Perla, Orcollano, y otros mas disponibles en Corralón Artesan',
+}
 
 export default function Page() {
     return (
         <main className="font-grotesk bg-gradient-to-br from-gray-50 to-gray-100 px-4 sm:px-6 lg:px-16 py-12">
-            <Back name="Mesada" />
+            <Back name={title} />
             <section className="flex flex-col-reverse md:flex-row gap-8">
                 <div className="flex flex-col gap-3 w-full">
                     <h3 className="text-3xl pb-4 w-fit font-bold text-gray-900">Material</h3>
