@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function Footer() {
   const [showDialog, setShowDialog] = useState(false);
-  const email = "artesansh@yahoo.com";
+  const email = "corralonartesan@yahoo.com";
   return (
     <footer
       className="relative font-grotesk bg-gray-900 text-white overflow-hidden bg-fixed"
