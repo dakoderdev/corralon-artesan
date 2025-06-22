@@ -63,7 +63,7 @@ export default function ProductosPage() {
                     <Link
                       key={index}
                       href={category.href}
-                      className="group flex flex-col sm:flex-row bg-white rounded-3xl md:rounded-2xl hover:shadow-lg overflow-hidden border border-gray-200 transition-all duration-300 hover:-translate-y-0.5"
+                      className="group flex flex-col sm:flex-row bg-white rounded-3xl md:rounded-2xl hover:shadow-lg overflow-hidden   transition-all duration-300 hover:-translate-y-0.5"
                     >
                       <div className="relative w-full sm:w-40 h-40 sm:h-auto overflow-hidden sm:rounded-none sm:rounded-l-2xl">
                         <Image
@@ -96,7 +96,7 @@ export default function ProductosPage() {
                           {category.tags.map((tag, tagIndex) => (
                             <span
                               key={tagIndex}
-                              className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700 border border-gray-200 transition-colors duration-300"
+                              className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700   transition-colors duration-300"
                             >
                               {tag}
                             </span>
@@ -109,7 +109,7 @@ export default function ProductosPage() {
               </div>
               <div className="lg:col-span-1">
                 <div className="block md:sticky top-24">
-                  <div className="bg-white rounded-3xl md:rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
+                  <div className="bg-white rounded-3xl md:rounded-2xl overflow-hidden   shadow-lg">
                     <div className="p-6 border-b border-gray-100">
                       <div className="flex items-center gap-3">
                         <div className="p-2 rounded-lg" style={{ backgroundColor: "#FF6161" }}>

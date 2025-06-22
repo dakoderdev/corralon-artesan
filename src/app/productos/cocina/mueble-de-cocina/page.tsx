@@ -28,42 +28,42 @@ export default function Page() {
             <Back name={title} />
             <p className="text-gray-500 text-sm mb-4">Ahora mismo no disponibles</p>
             <div className="grid md:grid-cols-2 gap-3">
-                <article className="flex flex-col sm:flex-row h-full sm:h-44 w-full bg-white rounded-2xl border border-gray-200">
+                <article className="flex flex-col sm:flex-row h-full sm:h-44 w-full bg-white rounded-2xl  ">
                     <h3 className="grid place-items-center border-r border-gray-200 text-3xl font-mono font-bold text-gray-500 h-full py-4 sm:px-8">1.2</h3>
                     <div className="flex flex-col sm:flex-row gap-2 h-full w-full p-2">
                         <Image src={muebleUno} alt="Primer Mueble 1.2" className="object-cover w-full h-full rounded-lg" />
                         <Image src={muebleDos} alt="Segundo Mueble 1.2" className="object-cover w-full h-full rounded-lg" />
                     </div>
                 </article>
-                <article className="flex flex-col sm:flex-row h-full sm:h-44 w-full bg-white rounded-2xl border border-gray-200">
+                <article className="flex flex-col sm:flex-row h-full sm:h-44 w-full bg-white rounded-2xl  ">
                     <h3 className="grid place-items-center border-r border-gray-200 text-3xl font-mono font-bold text-gray-500 h-full py-4 sm:px-8">1.4</h3>
                     <div className="flex flex-col sm:flex-row gap-2 h-full w-full p-2">
                         <Image src={muebleTres} alt="Primer Mueble 1.4" className="object-cover w-full h-full rounded-lg" />
                         <Image src={muebleCuatro} alt="Segundo Mueble 1.4" className="object-cover w-full h-full rounded-lg" />
                     </div>
                 </article>
-                <article className="flex flex-col sm:flex-row h-full sm:h-44 w-full bg-white rounded-2xl border border-gray-200">
+                <article className="flex flex-col sm:flex-row h-full sm:h-44 w-full bg-white rounded-2xl  ">
                     <h3 className="grid place-items-center border-r border-gray-200 text-3xl font-mono font-bold text-gray-500 h-full py-4 sm:px-8">1.6</h3>
                     <div className="flex flex-col sm:flex-row gap-2 h-full w-full p-2">
                         <Image src={muebleCinco} alt="Primer Mueble 1.6" className="object-cover w-full h-full rounded-lg" />
                         <Image src={muebleSeis} alt="Segundo Mueble 1.6" className="object-cover w-full h-full rounded-lg" />
                     </div>
                 </article>
-                <article className="flex flex-col sm:flex-row h-full sm:h-44 w-full bg-white rounded-2xl border border-gray-200">
+                <article className="flex flex-col sm:flex-row h-full sm:h-44 w-full bg-white rounded-2xl  ">
                     <h3 className="grid place-items-center border-r border-gray-200 text-3xl font-mono font-bold text-gray-500 h-full py-4 sm:px-8">1.8</h3>
                     <div className="flex flex-col sm:flex-row gap-2 h-full w-full p-2">
                         <Image src={muebleSiete} alt="Primer Mueble 1.8" className="object-cover w-full h-full rounded-lg" />
                         <Image src={muebleOcho} alt="Segundo Mueble 1.8" className="object-cover w-full h-full rounded-lg" />
                     </div>
                 </article>
-                <article className="flex flex-col sm:flex-row h-full sm:h-44 w-full bg-white rounded-2xl border border-gray-200">
+                <article className="flex flex-col sm:flex-row h-full sm:h-44 w-full bg-white rounded-2xl  ">
                     <h3 className="grid place-items-center border-r border-gray-200 text-3xl font-mono font-bold text-gray-500 h-full py-4 sm:px-8">2.0</h3>
                     <div className="flex flex-col sm:flex-row gap-2 h-full w-full p-2">
                         <Image src={muebleNueve} alt="Primer Mueble 2.0" className="object-cover w-full h-full rounded-lg" />
                         <Image src={muebleDiez} alt="Segundo Mueble 2.0" className="object-cover w-full h-full rounded-lg" />
                     </div>
                 </article>
-                <article className="flex flex-col sm:flex-row h-full sm:h-44 w-full bg-white rounded-2xl border border-gray-200">
+                <article className="flex flex-col sm:flex-row h-full sm:h-44 w-full bg-white rounded-2xl  ">
                     <h3 className="grid place-items-center border-r border-gray-200 text-3xl sm:text-sm font-bold text-gray-500 h-full py-4 sm:py-0 px-3">Personalizado</h3>
                     <div className="flex flex-col sm:flex-row gap-2 h-full w-full p-2">
                         <Image src={muebleOnce} alt="Primer Mueble Personalizado" className="object-cover w-full h-full rounded-lg" />
