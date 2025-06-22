@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from './nav';
 import Footer from './components/Footer';
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from "next/script";
 
 const spaceMono = Space_Mono({
   weight: ['400', '700'],
@@ -84,6 +85,12 @@ export default function RootLayout({
 
   return (
     <html lang="es">
+      <Script
+        src="https://cloud.umami.is/script.js"
+        data-website-id="d8337957-587e-4d8c-9697-a8fa0947bf49"
+        strategy="afterInteractive"
+        defer
+      />
       <body className={`${spaceMono.variable} ${spaceGrotesk.variable} antialiased`}>
         <Nav />
         {children}
