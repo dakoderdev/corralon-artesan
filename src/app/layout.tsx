@@ -85,14 +85,14 @@ export default function RootLayout({
 
   return (
     <html lang="es">
-      <Script
-        src="https://cloud.umami.is/script.js"
-        data-website-id="d8337957-587e-4d8c-9697-a8fa0947bf49"
-        strategy="afterInteractive"
-        defer
-      />
       <body className={`${spaceMono.variable} ${spaceGrotesk.variable} antialiased`}>
         <Nav />
+        <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="d8337957-587e-4d8c-9697-a8fa0947bf49"
+          strategy="beforeInteractive"
+          defer
+        />
         {children}
         <Footer />
         <SpeedInsights />
