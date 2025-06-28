@@ -97,6 +97,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <SpeedInsights />
+        <Analytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
