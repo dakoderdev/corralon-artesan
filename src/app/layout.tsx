@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from './nav';
 import Footer from './components/Footer';
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next"
 import Script from "next/script";
 
 const spaceMono = Space_Mono({
