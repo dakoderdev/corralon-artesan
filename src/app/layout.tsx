@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title: "Corralón Artesan | Materiales de Construcción en Tucumán",
   description:
     "Con más de 30 años de experiencia, Corralón Artesan ofrece materiales de construcción de calidad en Tucumán. Atención personalizada y amplio stock disponible.",
-  metadataBase: new URL("https://www.corralonartesan.vercel.app"),
+  metadataBase: new URL("https://www.corralonartesan.com"),
   alternates: {
     canonical: "/",
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Corralón Artesan | Materiales de Construcción en Tucumán",
     description:
       "Con más de 30 años de experiencia, Corralón Artesan ofrece materiales de construcción de calidad en Tucumán. Atención personalizada y amplio stock disponible.",
-    url: "https://www.corralonartesan.vercel.app",
+    url: "https://www.corralonartesan.com",
     type: "website",
     locale: "es_AR",
   },
@@ -56,9 +56,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "HardwareStore",
     "name": "Corralón Artesan",
-    "image": "https://corralonartesan.vercel.app/logo.png",
-    "@id": "https://corralonartesan.vercel.app",
-    "url": "https://corralonartesan.vercel.app",
+    "image": "https://corralonartesan.com/logo.png",
+    "@id": "https://corralonartesan.com",
+    "url": "https://corralonartesan.com",
     "telephone": "+54 381 424-6952",
     "priceRange": "$$",
     "address": {
